@@ -1,0 +1,52 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: lighten($primary, 80%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: lighten($primary, 50%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: lighten($primary, 25%);
+}
+
+.scrollable {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+    border-radius: 10px;
+        background-color: lighten($primary, 80%);
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background-color: lighten($primary, 50%);
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: lighten($primary, 25%);
+    }
+}
+
+/* For Firefox */
+:root {
+    scrollbar-color: lighten($primary, 50%) lighten($primary, 80%);
+    .scrollable {
+        scrollbar-color: lighten($primary, 50%) lighten($primary, 80%);
+    }
+}

@@ -1,0 +1,8 @@
+@import url('../../node_modules/font-awesome/css/font-awesome.min.css');
+
+a.languange_item {
+    color: white;
+}
+a.languange_item.active {
+    font-weight: 600;
+}
