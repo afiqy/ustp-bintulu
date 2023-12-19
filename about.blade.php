@@ -5,7 +5,7 @@
         <div class="container-fluid bg-primary py-5 hero-header mb-5">
             <div class="row py-3">
                 <div class="col-12 text-center">
-                    <h1 class="display-3 text-white animated zoomIn">{{ __('VISI DAN MISI') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __("TENTANG KAMI") }}</h1>
                 </div>
             </div>
         </div>
@@ -19,25 +19,27 @@
                     <div class="col-lg-7">
                         <div class="section-title mb-4">
                             <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                            <h1 class="display-5 mb-0">Pejabat Pendidikan Daerah Bintulu</h1>
+                            <h1 class="display-5 mb-0">Pejabat Pendidikan daerah Bintulu</h1>
                         </div>
-                        <h4 class="text-body fst-italic mb-4">Melestarikan Sistem Pendidikan Yang Berkualiti Untuk Membangunkan Potensi Individu bagi Memenuhi Aspirasi Negara</h4>
-                        <p class="text-body fst-italic mb-4">Pendidikan Berkualiti Insan Terdidik Negara Sejahtera</p>
+                        <h4 class="text-body fst-italic mb-4">Bintulu Peneraju Transformasi Pendidikan sarawak Tahun 2030</h4>
+                        <p class="mb-4">Dasar Kualiti, PPD Bintulu komited dalam meningkatkan kecekapan dan keberkesanan tadbir urus serta proses penyampaian perkhidmatan bagi memenuhi kehendak pelanggan dan aspirasi negara selaras matlamat dan Falsafah Pendidikan kebangsaan 
+                        </p>   
+                    
                         <div class="row g-3">
                             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Profesionalisme</h5>
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Intergriti
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Pegawai Pendidikan</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Anggota Kumpulan Pelaksana
                                 </h5>
                             </div>
                             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Mesra</h5>
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Senyum Selalu</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Isnin hingga Jumaat buka</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Sabtu dan Ahad Tutup</h5>
                             </div>
                         </div>
                         <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
                             data-wow-delay="0.6s">Temujanji</a>
                     </div>
-                    <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="col-lg-5" style="min-height: 500px;">
                         <div class="position-relative h-100">
                             <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
                                 src="img/about.png" style="object-fit: cover;">
