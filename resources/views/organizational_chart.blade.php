@@ -18,14 +18,28 @@
                 <div class="row g-5">
                     <div class="col-lg-5">
                         <div class="section-title mb-4">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Pricing Plan</h5>
-                            <h1 class="display-5 mb-0">We Offer Fair Prices for Dental Treatment</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">PENGURUSAN TERTINGGI PPD BINTULU</h5>
+                            <h1 class="display-10 mb-0">SAMRI BIN SUHAILI</h1>
+                            <h1 class="display-10 mb-0">PEGAWAI PENDIDIKAN DAERAH BINTULU</h1>
+                            <h1 class="display-10 mb-0">YUSUP BIN HJ. HARBI</h1>
+                            <h1 class="display-10 mb-0">TIMBALAN PPD SEKTOR PERANCANGAN</h1>
+                            <h1 class="display-10 mb-0">NAFISAH BINTI ROSLI</h1>
+                            <h1 class="display-10 mb-0">TIMBALAN PPD SEKTOR PEMBELAJARAN</h1>
+                            <h1 class="display-10 mb-0">LAW SIONG LEE</h1>
+                            <h1 class="display-10 mb-0">TIMBALAN PPD SEKTOR PENGURUSAN SEKOLAH</h1>
+                            <h1 class="display-10 mb-0">SYAHRUL BIN SALLAMUN</h1>
+                            <h1 class="display-10 mb-0">TIMBALAN PPD SEKTOR PEMBANGUNAN MURID</h1>
+                            <h1 class="display-10 mb-0">IESHA RINA BAWANG ANAK UNDING</h1>
+                            <h1 class="display-10 mb-0">KAUNSELOR PENDIDIKAN DAERAH</h1>
+                            <h1 class="display-10 mb-0">SEKTOR PSIKOLOGI DAN KAUNSELING</h1>
+                            <h1 class="display-10 mb-0">LAKHIRBA BIN ZAIDI</h1>
+                            <h1 class="display-10 mb-0">SEKTOR PENTAKSIRAN DAN PEPERIKSAAN</h1>
+                            <h1 class="display-10 mb-0">MOHAMAD SAUFI BIN USUP</h1>
+                            <h1 class="display-10 mb-0">SEKTOR PENGURUSAN</h1>
                         </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                            amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                            clita duo justo eirmod magna dolore erat amet</p>
+                        <p class="mb-4">PEJABAT PENDIDIKAN DAERAH BINTULU</p>
                         <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment</h5>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">+012 345 6789</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">+086331627</h1>
                     </div>
                     <div class="col-lg-7">
                         <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">

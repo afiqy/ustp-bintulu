@@ -5,7 +5,18 @@
         <div class="container-fluid bg-primary py-5 hero-header mb-5">
             <div class="row py-3">
                 <div class="col-12 text-center">
-                    <h1 class="display-3 text-white animated zoomIn">{{ __('VISI DAN MISI') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('VISI') }}</h1>
+                    <h1 class="display-8 text-white animated zoomIn">{{ __('MELESTARIKAN SISTEM PENDIDIKAN YANG BERKUALITI UNTUK MEMBANGUNKAN POTENSI INDIVIDU BAGI MEMENUHI ASPIRASI NEGARA') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('MISI') }}</h1>
+                    <h1 class="display-8 text-white animated zoomIn">{{ __('PENDIDIKAN BERKUALITI INSAN TERDIDIK NEGARA SEJAHTERA') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('NILAI') }}</h1>
+                    <h1 class="display-8 text-white animated zoomIn">{{ __('PROFESIONAL.INTEGRITI.MESRA') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('MATLAMAT') }}</h1>
+                    <h1 class="display-8 text-white animated zoomIn">{{ __('BINTULU PENERAJU TRANSFORMASI PENDIDIKAN SARAWAK TAHUN 2030') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('SLOGAN') }}</h1>
+                    <h1 class="display-8 text-white animated zoomIn">{{ __('SHINE BINTULU SHINE') }}</h1>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('MOTTO') }}</h1>
+                    <h1 class="display-8 text-white animated zoomIn">{{ __('MEMPERKASAKAN PENDIDIKAN MELESTARIKAN KEMENJADIAN MURID') }}</h1>
                 </div>
             </div>
         </div>
