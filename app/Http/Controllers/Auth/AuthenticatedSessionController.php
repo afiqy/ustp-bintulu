@@ -22,7 +22,6 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-        $test = 'ini test';
         return view('auth.login');
     }
 
