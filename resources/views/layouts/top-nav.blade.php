@@ -55,7 +55,7 @@
                 <a href="{{ route('home') }}" class="nav-item nav-link @if(\Request::route()->getName() == 'home') active @endif">{{ __('UTAMA') }}</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('KORPORAT')}}</a>
-                    <div class="dropdown-menu m-0" style="top: 75% !important;">
+                    <div class="dropdown-menu m-0" style="top: 45% !important;">
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('CARTA ORGANISASI') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('FALSAFAH PENDIDIKAN KEBANGSAAN') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PEGAWAI PPD') }}</a>
@@ -66,20 +66,18 @@
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('PENDIDIKAN')}}</a>
-                    <div class="dropdown-menu m-0" style="top: 75% !important;">
+                    <div class="dropdown-menu m-0" style="top: 45% !important;">
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('SEKOLAH MENENGAH') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('SEKOLAH RENDAH') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PRA SEKOLAH') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PENDIDIKAN KHAS') }}</a>
                     </div>
                 </div>
-                <a <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('KALENDAR')}}</a>
-                    <div class="dropdown-menu m-0" style="top: 75% !important;">
-                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('CARTA ORGANISASI') }}</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('KALENDAR')}}</a>
+                    
                     </div>
                 </div>
-                
             </div>
             {{-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
                     class="fa fa-search"></i></button> --}}
@@ -87,7 +85,6 @@
                 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fa fa-solid fa-user"></i>
                 </a>
-                
                 <div class="dropdown-menu user_dropdown_menu" aria-labelledby="dropdownMenuLink" style="top: 150%">
                     @if(Auth::check())
                         <a class="dropdown-item" href="{{ route('admin.dashboard') }}">{{ __('RUANG ADMIN') }}</a>
