@@ -57,14 +57,28 @@
                     <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('KORPORAT')}}</a>
                     <div class="dropdown-menu m-0" style="top: 75% !important;">
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('CARTA ORGANISASI') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('FALSAFAH PENDIDIKAN KEBANGSAAN') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PEGAWAI PPD') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('STAFF PPD BINTULU') }}</a>
                         <a href="{{ route('about') }}" class="dropdown-item @if(\Request::route()->getName() == 'about') active @endif">{{ __('SEKTOR DAN UNIT') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('SEJARAH PPD') }}</a>
                     </div>
                 </div>
-                <a href="{{ route('public') }}" class="nav-item nav-link @if(\Request::route()->getName() == 'public') active @endif">{{ __('UMUM') }}</a>
-                <a href="{{ route('calendar') }}" class="nav-item nav-link @if(\Request::route()->getName() == 'calendar') active @endif">{{ __('KALENDAR') }}</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('PENDIDIKAN')}}</a>
+                    <div class="dropdown-menu m-0" style="top: 75% !important;">
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('SEKOLAH MENENGAH') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('SEKOLAH RENDAH') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PRA SEKOLAH') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PENDIDIKAN KHAS') }}</a>
+                    </div>
+                </div>
+                <a <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('KALENDAR')}}</a>
+                    <div class="dropdown-menu m-0" style="top: 75% !important;">
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('CARTA ORGANISASI') }}</a>
+                    </div>
+                </div>
                 
             </div>
             {{-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
