@@ -18,7 +18,7 @@
                 <div class="row g-5">
                     <div class="col-lg-7">
                         <div class="section-title mb-4">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Tentang Kami</h5>
                             <h1 class="display-5 mb-0">Pejabat Pendidikan daerah Bintulu</h1>
                         </div>
                         <h4 class="text-body fst-italic mb-4">Bintulu Peneraju Transformasi Pendidikan sarawak Tahun 2030</h4>

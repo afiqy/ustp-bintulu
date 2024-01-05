@@ -20,8 +20,8 @@
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0 float-left">
                 <div class="d-inline-flex align-items-center float-left">
-                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Opening Hours: Mon - Fri : 8.00 am
-                        - 5.00 pm, Saturday & Sunday Closed </small>
+                    <small class="py-2"><i class="far fa-clock text-primary me-2"></i>Waktu Operasi: Isnin-Jumaat : 8.00 pagi
+                        - 5.00 petang, Sabtu & Ahad Tutup </small>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end float-right">
@@ -44,8 +44,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="{{ route('home') }}" class="navbar-brand p-0">
-            {{-- <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DentCare</h1> --}}
-            <img src="{{ asset('img/logo.png') }}" alt="Pejabat Pendidikan Daerah Bintulu" style="max-height: 6rem !important;">
+            {{-- <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Pejabat Pendidikan Daerah Bintulu</h1> --}}
+            <img src="{{ asset('img/loggo.jpg') }}" alt="Pejabat Pendidikan Daerah Bintulu" style="max-height: 6rem !important;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -54,11 +54,13 @@
             <div class="navbar-nav ms-auto py-0">
                 <a href="{{ route('home') }}" class="nav-item nav-link @if(\Request::route()->getName() == 'home') active @endif">{{ __('UTAMA') }}</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('ORGANISASI')}}</a>
+                    <a href="#" class="nav-link dropdown-toggle @if(\Request::route()->getName() == 'price' || \Request::route()->getName() == 'team' || \Request::route()->getName() == 'testimonial' || \Request::route()->getName() == 'appointment') active @endif" data-bs-toggle="dropdown">{{ __('KORPORAT')}}</a>
                     <div class="dropdown-menu m-0" style="top: 75% !important;">
-                        <a href="{{ route('vision_and_mission') }}" class="dropdown-item @if(\Request::route()->getName() == 'vision_and_mission') active @endif">{{ __('VISI DAN MISI') }}</a>
                         <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('CARTA ORGANISASI') }}</a>
-                        <a href="{{ route('about') }}" class="dropdown-item @if(\Request::route()->getName() == 'about') active @endif">{{ __('TENTANG KAMI') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('PEGAWAI PPD') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('STAFF PPD BINTULU') }}</a>
+                        <a href="{{ route('about') }}" class="dropdown-item @if(\Request::route()->getName() == 'about') active @endif">{{ __('SEKTOR DAN UNIT') }}</a>
+                        <a href="{{ route('organizational_chart') }}" class="dropdown-item @if(\Request::route()->getName() == 'organizational_chart') active @endif">{{ __('SEJARAH PPD') }}</a>
                     </div>
                 </div>
                 <a href="{{ route('public') }}" class="nav-item nav-link @if(\Request::route()->getName() == 'public') active @endif">{{ __('UMUM') }}</a>

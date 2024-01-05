@@ -6,12 +6,12 @@
             <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-100" src="{{ asset('images/carousel-default.png') }}" alt="Image">
+                        <img class="w-100" src="{{ asset('images/background1.png') }}" alt="Image">
                         <div class="carousel-caption-main d-flex flex-column align-items-center justify-content-center">
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                        <img class="w-100" src="img/background2.png" alt="Image">
                         <div class="carousel-caption-sub d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
                                 <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy
@@ -167,24 +167,23 @@
                             <h3 class="text-white mb-3">{{ __('Warga PPD') }}</h3>
                             <div class="date mb-3" id="date" data-target-input="nearest">
                                 <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                    placeholder="Appointment Date" data-target="#date" data-toggle="datetimepicker"
+                                    placeholder="Tarikh" data-target="#date" data-toggle="datetimepicker"
                                     style="height: 40px;">
                             </div>
                             <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
-                                <option selected>Select A Service</option>
-                                <option value="1">Service 1</option>
-                                <option value="2">Service 2</option>
-                                <option value="3">Service 3</option>
+                                <option selected>Perkhidmatan</option>
+                                <option value="1">Perpindahan</option>
+                                <option value="2">Perjawatan</option>
+                                <option value="3">Lain-lain</option>
                             </select>
-                            <a class="btn btn-light" href="">Search Doctor</a>
+                            <a class="btn btn-light" href="">Pegawai</a>
                         </div>
                     </div>
                     <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
                         <div class="bg-secondary d-flex flex-column p-5" style="height: 450px;">
-                            <h3 class="text-white mb-3">Make Appointment</h3>
-                            <p class="text-white">Ipsum erat ipsum dolor clita rebum no rebum dolores labore, ipsum magna
-                                at eos et eos amet.</p>
-                            <h2 class="text-white mb-0">+012 345 6789</h2>
+                            <h3 class="text-white mb-3">Tempah Temujanji</h3>
+                            <p class="text-white">Sila membuat temujanji bersama Pegawai terlebih dahulu atau hubungi nombor berikut.</p>
+                            <h2 class="text-white mb-0">+86-331627</h2>
                         </div>
                     </div>
                 </div>
@@ -199,27 +198,24 @@
                 <div class="row g-5">
                     <div class="col-lg-7">
                         <div class="section-title mb-4">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                            <h1 class="display-5 mb-0">The World's Best Dental Clinic That You Can Trust</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Tentang Kami</h5>
+                            <h1 class="display-5 mb-0">Falsafah Pendidikan Kebangsaan</h1>
                         </div>
-                        <h4 class="text-body fst-italic mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no
-                            lorem sit clita duo justo magna dolore</h4>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                            amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                            clita duo justo et tempor eirmod magna dolore erat amet</p>
+                        <h4 class="text-body fst-italic mb-4">Pendidikan di Malaysia adalah suatu usaha berterusan ke arah lebih memperkembangkan potensi individu secara menyeluruh dan bersepadu untuk mewujudkan insan yang seimbang dan harmonis dari segi intelek, rohani, emosi dan jasmani, berdasarkan kepercayaan dan kepatuhan kepada Tuhan. Usaha ini adalah bagi melahirkan warganegara Malaysia yang berilmu pengetahuan, berketrampilan, berakhlak mulia, bertanggungjawab dan berkeupayaan mencapai kesejahteraan diri, serta memberi sumbangan terhadap keharmonian dan kemakmuran keluarga, masyarakat dan negara.</h4>
+                        <p class="mb-4"></p>
                         <div class="row g-3">
                             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Award Winning</h5>
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Professional Staff
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i></h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>
                                 </h5>
                             </div>
                             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>24/7 Opened</h5>
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Fair Prices</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i></h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i></h5>
                             </div>
                         </div>
                         <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
-                            data-wow-delay="0.6s">Make Appointment</a>
+                            data-wow-delay="0.6s">Tempah Temujanji</a>
                     </div>
                     <div class="col-lg-5" style="min-height: 500px;">
                         <div class="position-relative h-100">

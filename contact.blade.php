@@ -5,10 +5,10 @@
         <div class="container-fluid bg-primary py-5 hero-header mb-5">
             <div class="row py-3">
                 <div class="col-12 text-center">
-                    <h1 class="display-3 text-white animated zoomIn">Contact Us</h1>
-                    <a href="" class="h4 text-white">Home</a>
+                    <h1 class="display-3 text-white animated zoomIn">Hubungi kami</h1>
+                    <a href="" class="h4 text-white">Laman Utama</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h4 text-white">Contact</a>
+                    <a href="" class="h4 text-white">Hubungi</a>
                 </div>
             </div>
         </div>
@@ -23,26 +23,26 @@
                         <div class="bg-light rounded h-100 p-5">
                             <div class="section-title">
                                 <h5 class="position-relative d-inline-block text-primary text-uppercase">Contact Us</h5>
-                                <h1 class="display-6 mb-4">Feel Free To Contact Us</h1>
+                                <h1 class="display-6 mb-4">Hubungi Kami Segera</h1>
                             </div>
                             <div class="d-flex align-items-center mb-2">
                                 <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                                 <div class="text-start">
-                                    <h5 class="mb-0">Our Office</h5>
+                                    <h5 class="mb-0">Pejabat</h5>
                                     <span>Pejabat Pendidikan Daerah Bintulu</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center mb-2">
                                 <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
                                 <div class="text-start">
-                                    <h5 class="mb-0">Email Us</h5>
+                                    <h5 class="mb-0">Emel</h5>
                                     <span>ppdbintulu@moe.gov.my</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center">
                                 <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
                                 <div class="text-start">
-                                    <h5 class="mb-0">Call Us</h5>
+                                    <h5 class="mb-0">Hubungi Kami</h5>
                                     <span>+086-331627</span>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@
                     <form class="mx-auto" style="max-width: 600px;">
                         <div class="input-group">
                             <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-dark px-4">Sign Up</button>
+                            <button class="btn btn-dark px-4">Daftar Sekarang</button>
                         </div>
                     </form>
                 </div>
