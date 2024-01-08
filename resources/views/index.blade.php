@@ -6,18 +6,25 @@
             <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+<<<<<<< Updated upstream
                         <img class="w-100" src="{{ asset('images/background1.png') }}" alt="Image">
+=======
+                        <img class="w-100" src="{{ asset('images/background.png') }}" alt="Image">
+>>>>>>> Stashed changes
                         <div class="carousel-caption-main d-flex flex-column align-items-center justify-content-center">
                         </div>
                     </div>
                     <div class="carousel-item">
+<<<<<<< Updated upstream
                         <img class="w-100" src="img/background2.png" alt="Image">
+=======
+                        <img class="w-100" src="img/ppd 1.jpg" alt="Image">
+>>>>>>> Stashed changes
                         <div class="carousel-caption-sub d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Keep Your Teeth Healthy
-                                </h5>
-                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Take The Best Quality Dental
-                                    Treatment</h1>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Shine Bintulu Shine
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Bintulu Peneraju Transformasi pendidikan Sarawak Tahun 2030
+                                </h1>
                                 <a href="appointment.html"
                                     class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
                                 <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact
@@ -171,19 +178,38 @@
                                     style="height: 40px;">
                             </div>
                             <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
+<<<<<<< Updated upstream
                                 <option selected>Perkhidmatan</option>
                                 <option value="1">Perpindahan</option>
                                 <option value="2">Perjawatan</option>
                                 <option value="3">Lain-lain</option>
                             </select>
                             <a class="btn btn-light" href="">Pegawai</a>
+=======
+                                <option selected>Pilih Sektor</option>
+                                <option value="1">Sektor Sektor Perancangan</option>
+                                            <option value="2">Sektor Pembelajaran</option>
+                                            <option value="3">Sektor Pengurusan Sekolah</option>
+                                            <option value="4">Sektor Pembangunan Murid</option>
+                                            <option value="5">Sektor Kaunseling Dan Psikologi</option>
+                                            <option value="5">Sektor Pentaksiran Dan Peperiksaan</option>
+                                            <option value="7">Sektor Pengurusan</option>
+                            </select>
+                            <a class="btn btn-light" href="">Pilihan Pegawai</a>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                     <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
                         <div class="bg-secondary d-flex flex-column p-5" style="height: 450px;">
+<<<<<<< Updated upstream
                             <h3 class="text-white mb-3">Tempah Temujanji</h3>
                             <p class="text-white">Sila membuat temujanji bersama Pegawai terlebih dahulu atau hubungi nombor berikut.</p>
                             <h2 class="text-white mb-0">+86-331627</h2>
+=======
+                            <h3 class="text-white mb-3">Sila Buat Temu Janji</h3>
+                            <p class="text-white">Jika Anda ingin berjumpa pegawai yang berkenaan sila membuat temujanji supaya anda tidak lama menunggu.</p>
+                            <h2 class="text-white mb-0">+086-331627</h2>
+>>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>
@@ -198,6 +224,7 @@
                 <div class="row g-5">
                     <div class="col-lg-7">
                         <div class="section-title mb-4">
+<<<<<<< Updated upstream
                             <h5 class="position-relative d-inline-block text-primary text-uppercase">Tentang Kami</h5>
                             <h1 class="display-5 mb-0">Falsafah Pendidikan Kebangsaan</h1>
                         </div>
@@ -216,11 +243,33 @@
                         </div>
                         <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
                             data-wow-delay="0.6s">Tempah Temujanji</a>
+=======
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
+                            <h1 class="display-5 mb-0">{{__('Profil Jabatan')}}</h1>
+                        </div>
+                        <h4 class="text-body fst-italic mb-4">Pejabat Pendidikan Daerah Bintulu terletak di Jln Sultan Iskandar, Kampung Baru Bintulu, 97000 Bintulu, Sarawak, Malaysia, berhampiran tempat ini: Pejabat Mara (1 km), Pejabat PERBINDA Perbandaraan (BDA) (1 km), 
+                            Wisma Bintulu (2 km), Jabatan Pendaftaran Bintulu (3 km), Jabatan Tenaga Kerja Bintulu (3 km).</h4>
+                         <p class="mb-4">PPD Bintulu komited dalam meningkatkan kecekapan dan keberkesanan tadbir urus serta proses penyampaian perkhidmatan bagi memenuhi kehendak pelanggan dan 
+                            aspirasi negara selaras dengan matlamat dan Falsafah Pendidikan Kebangsaan.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Pegawai Ikhtisas</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Anggota Kumpulan Pelaksana
+                                </h5>
+                            </div>
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Isnin Hingga Jumaat</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>8.00 Pagi Hingga 5 Petang</h5>
+                            </div>
+                        </div>
+                        <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
+                            data-wow-delay="0.6s">Buat Temu Janji Anda</a>
+>>>>>>> Stashed changes
                     </div>
                     <div class="col-lg-5" style="min-height: 500px;">
                         <div class="position-relative h-100">
                             <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                                src="img/about.jpg" style="object-fit: cover;">
+                                src="img/ppd1-1.jpg" style="object-fit: cover;">
                         </div>
                     </div>
                 </div>
@@ -235,34 +284,39 @@
                 <div class="row gx-5">
                     <div class="col-lg-6 py-5">
                         <div class="py-5">
-                            <h1 class="display-5 text-white mb-4">We Are A Certified and Award Winning Dental Clinic You
-                                Can Trust</h1>
-                            <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
-                                ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt
-                                voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr
-                                ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                            <h1 class="display-5 text-white mb-4">Kami Sedia Membantu Anda Untuk apa-apa yang anda ingin tahu berkaitan 
+                                dengan Sekolah-sekolah di Bintulu serta Pejabat Pendidikan Daerah Bintulu</h1>
+                               
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
                             data-wow-delay="0.6s">
-                            <h1 class="text-white mb-4">Make Appointment</h1>
+                            <h1 class="text-white mb-4">Temu Janji</h1>
                             <form>
                                 <div class="row g-3">
                                     <div class="col-12 col-sm-6">
                                         <select class="form-select bg-light border-0" style="height: 55px;">
-                                            <option selected>Select A Service</option>
-                                            <option value="1">Service 1</option>
-                                            <option value="2">Service 2</option>
-                                            <option value="3">Service 3</option>
+                                        <option selected>Pilih Sektor</option>
+                                            <option value="1">Sektor Sektor Perancangan
+                                            <option value="2">Sektor Pembelajaran</option>
+                                            <option value="3">Sektor Pengurusan Sekolah</option>
+                                            <option value="4">Sektor Pembangunan Murid</option>
+                                            <option value="5">Sektor Kaunseling Dan Psikologi</option>
+                                            <option value="5">Sektor Pentaksiran Dan Peperiksaan</option>
+                                            <option value="7">Sektor Pengurusan</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <select class="form-select bg-light border-0" style="height: 55px;">
-                                            <option selected>Select Doctor</option>
-                                            <option value="1">Doctor 1</option>
-                                            <option value="2">Doctor 2</option>
-                                            <option value="3">Doctor 3</option>
+                                             <option selected>Pilihan Pegawai</option>
+                                            <option value="1">Unit Perancangan</option>
+                                            <option value="2">Unit Pembelajaran</option>
+                                            <option value="3">Unit Pengurusan Sekolah</option>
+                                            <option value="3">Unit Pembangunan Murid</option>
+                                            <option value="3">Unit Kaunseling Dan Psikologi</option>
+                                            <option value="3">Unit Pentaksiran Dan Peperiksaan</option> 
+                                            <option value="3">Unit Pengurusan</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6">
@@ -290,7 +344,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>
+                                        <button class="btn btn-dark w-100 py-3" type="submit">Temu Janji</button>
                                     </div>
                                 </div>
                             </form>
@@ -308,30 +362,30 @@
                 <div class="row g-5 mb-5">
                     <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
                         <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                            <img class="position-absolute w-100 h-100" src="img/before.jpg" style="object-fit: cover;">
-                            <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
+                            <img class="position-absolute w-100 h-100" src="img/ppd 1.jpg" style="object-fit: cover;">
+                            <img class="position-absolute w-100 h-100" src="img/ppd1-1.jpg" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="section-title mb-5">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Services</h5>
-                            <h1 class="display-5 mb-0">We Offer The Best Quality Dental Services</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Servis</h5>
+                            <h1 class="display-5 mb-0">Kami akan memberi layanan yang terbaik kepada anda</h1>
                         </div>
                         <div class="row g-5">
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/service-1.jpg" alt="">
+                                    <img class="img-fluid" src="img/team-2.png" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Cosmetic Dentistry</h5>
+                                    <h5 class="m-0">Sektor Perancangan</h5>
                                 </div>
                             </div>
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/service-2.jpg" alt="">
+                                    <img class="img-fluid" src="img/team-3.png" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Dental Implants</h5>
+                                    <h5 class="m-0">Sektor Pembelajaran</h5>
                                 </div>
                             </div>
                         </div>
@@ -342,18 +396,18 @@
                         <div class="row g-5">
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/service-3.jpg" alt="">
+                                    <img class="img-fluid" src="img/Team-4.png" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Dental Bridges</h5>
+                                    <h5 class="m-0">Sektor Pengurusan Sekolah</h5>
                                 </div>
                             </div>
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/service-4.jpg" alt="">
+                                    <img class="img-fluid" src="img/Team-5.jpg" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Teeth Whitening</h5>
+                                    <h5 class="m-0">Sektor Pembangunan Murid</h5>
                                 </div>
                             </div>
                         </div>
@@ -361,10 +415,9 @@
                     <div class="col-lg-5 service-item wow zoomIn" data-wow-delay="0.9s">
                         <div
                             class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-4">
-                            <h3 class="text-white mb-3">Make Appointment</h3>
-                            <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
-                                magna stet eirmod</p>
-                            <h2 class="text-white mb-0">+012 345 6789</h2>
+                            <h3 class="text-white mb-3">Temu Janji</h3>
+                            <p class="text-white mb-3">Ingin Temui kami sila buat Temu janji anda semua seupaya tidak lama menunggu</p>
+                             <h2 class="text-white mb-0">086-331627</h2>
                         </div>
                     </div>
                 </div>
@@ -379,10 +432,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 wow zoomIn" data-wow-delay="0.6s">
                         <div class="offer-text text-center rounded p-5">
-                            <h1 class="display-5 text-white">Save 30% On Your First Dental Checkup</h1>
-                            <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et
-                                dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore
-                                eirmod diam duo lorem magna sit dolore sed et.</p>
+                            <h1 class="display-5 text-white">Buatlah Temu Janji Anda kepada Pegawai yang Anda ingin Berjumpa</h1>
+                            <p class="text-white mb-4">Kedatangan Anda di alu-alukan dan segala cadangan serta pendapat anda kami hargai serta membaiki layanan kami</p>
                             <a href="appointment.html" class="btn btn-dark py-3 px-5 me-3">Appointment</a>
                             <a href="" class="btn btn-light py-3 px-5">Read More</a>
                         </div>
@@ -399,21 +450,19 @@
                 <div class="row g-5">
                     <div class="col-lg-5">
                         <div class="section-title mb-4">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Pricing Plan</h5>
-                            <h1 class="display-5 mb-0">We Offer Fair Prices for Dental Treatment</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Matlamat</h5>
+                            <h1 class="display-5 mb-0">Matlamat Pejabat Pendidikan Daerah Bintulu</h1>
                         </div>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                            amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                            clita duo justo eirmod magna dolore erat amet</p>
+                        <p class="mb-4">Bintulu Peneraju Transformasi Pendidikan Sarawak Tahun 2030</p>
                         <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment
                         </h5>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">+012 345 6789</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">086-331627</h1>
                     </div>
                     <div class="col-lg-7">
                         <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
                             <div class="price-item pb-4">
                                 <div class="position-relative">
-                                    <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
+                                    <img class="img-fluid rounded-top" src="img/ppd1-1.jpg" alt="">
                                     <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
                                         style="z-index: 2;">
                                         <h2 class="text-primary m-0">$35</h2>
@@ -483,7 +532,7 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
+        <!-- <div class="container-fluid bg-primary bg-testimonial py-5 my-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -506,7 +555,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Testimonial End -->
 
 
@@ -516,15 +565,15 @@
                 <div class="row g-5">
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
                         <div class="section-title bg-light rounded h-100 p-5">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Dentist</h5>
-                            <h1 class="display-6 mb-4">Meet Our Certified & Experienced Dentist</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Pegawai PPD Bintulu</h5>
+                            <h1 class="display-6 mb-4">Timbalan Pegawai dan ketua sektor di PPD Bintulu</h1>
                             <a href="appointment.html" class="btn btn-primary py-3 px-5">Appointment</a>
                         </div>
                     </div>
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="position-relative rounded-top" style="z-index: 1;">
-                                <img class="img-fluid rounded-top w-100" src="img/team-1.jpg" alt="">
+                                <img class="img-fluid rounded-top w-100" src="img/team-2.png" alt="">
                                 <div
                                     class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
                                     <a class="btn btn-primary btn-square m-1" href="#"><i
@@ -538,15 +587,15 @@
                                 </div>
                             </div>
                             <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                                <h4 class="mb-2">Dr. John Doe</h4>
-                                <p class="text-primary mb-0">Implant Surgeon</p>
+                                <h4 class="mb-2">Yusup Bin Harbi</h4>
+                                <p class="text-primary mb-0">Timbalan PPD Sektor Perancangan</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
                         <div class="team-item">
                             <div class="position-relative rounded-top" style="z-index: 1;">
-                                <img class="img-fluid rounded-top w-100" src="img/team-2.jpg" alt="">
+                                <img class="img-fluid rounded-top w-100" src="img/team-3.png" alt="">
                                 <div
                                     class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
                                     <a class="btn btn-primary btn-square m-1" href="#"><i
@@ -560,15 +609,15 @@
                                 </div>
                             </div>
                             <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                                <h4 class="mb-2">Dr. John Doe</h4>
-                                <p class="text-primary mb-0">Implant Surgeon</p>
+                                <h4 class="mb-2">Nafisah Binti Rosli</h4>
+                                <p class="text-primary mb-0">Timbalan PPD Sektor Pembelajaran</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
                         <div class="team-item">
                             <div class="position-relative rounded-top" style="z-index: 1;">
-                                <img class="img-fluid rounded-top w-100" src="img/team-3.jpg" alt="">
+                                <img class="img-fluid rounded-top w-100" src="img/team-4.png" alt="">
                                 <div
                                     class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
                                     <a class="btn btn-primary btn-square m-1" href="#"><i
@@ -582,15 +631,15 @@
                                 </div>
                             </div>
                             <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                                <h4 class="mb-2">Dr. John Doe</h4>
-                                <p class="text-primary mb-0">Implant Surgeon</p>
+                                <h4 class="mb-2">Law siong Lee</h4>
+                                <p class="text-primary mb-0">Timbalan PPD Sektor Pengurusan Sekolah</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                         <div class="team-item">
                             <div class="position-relative rounded-top" style="z-index: 1;">
-                                <img class="img-fluid rounded-top w-100" src="img/team-4.jpg" alt="">
+                                <img class="img-fluid rounded-top w-100" src="img/image.jpg" alt="">
                                 <div
                                     class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
                                     <a class="btn btn-primary btn-square m-1" href="#"><i
@@ -604,15 +653,15 @@
                                 </div>
                             </div>
                             <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                                <h4 class="mb-2">Dr. John Doe</h4>
-                                <p class="text-primary mb-0">Implant Surgeon</p>
+                                <h4 class="mb-2">Awangku Ali Udin Bin Hj Pangeran Adenani</h4>
+                                <p class="text-primary mb-0">Timbalan PPD Sektor Pembangunan Murid</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
                         <div class="team-item">
                             <div class="position-relative rounded-top" style="z-index: 1;">
-                                <img class="img-fluid rounded-top w-100" src="img/team-5.jpg" alt="">
+                                <img class="img-fluid rounded-top w-100" src="img/team-6.png" alt="">
                                 <div
                                     class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
                                     <a class="btn btn-primary btn-square m-1" href="#"><i
@@ -626,8 +675,8 @@
                                 </div>
                             </div>
                             <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
-                                <h4 class="mb-2">Dr. John Doe</h4>
-                                <p class="text-primary mb-0">Implant Surgeon</p>
+                                <h4 class="mb-2">Mohamad Saufi Bin usup</h4>
+                                <p class="text-primary mb-0">Penolong Pegawai Tadbir (ketua Sektor Pengurusan)</p>
                             </div>
                         </div>
                     </div>

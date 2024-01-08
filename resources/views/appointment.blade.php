@@ -5,10 +5,10 @@
         <div class="container-fluid bg-primary py-5 hero-header mb-5">
             <div class="row py-3">
                 <div class="col-12 text-center">
-                    <h1 class="display-3 text-white animated zoomIn">Appointment</h1>
-                    <a href="" class="h4 text-white">Home</a>
+                    <h1 class="display-3 text-white animated zoomIn">{{ __('Temujanji') }}</h1>
+                    <a href="" class="h4 text-white">{{ __('Laman Utama') }}</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h4 text-white">Appointment</a>
+                    <a href="" class="h4 text-white">Temujanji</a>
                 </div>
             </div>
         </div>
@@ -22,34 +22,42 @@
                 <div class="row gx-5">
                     <div class="col-lg-6 py-5">
                         <div class="py-5">
-                            <h1 class="display-5 text-white mb-4">We Are A Certified and Award Winning Dental Clinic You Can
+                            <h1 class="display-5 text-white mb-4">Membuat Temujanji 
                                 Trust</h1>
-                            <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
-                                ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt
-                                voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr
-                                ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                            <p class="text-white mb-0">Jika anda mahu berjumpa Pegawai di Pejabat Pendidikan Daerah Bintulu,
+                                Sila buat temujanji dengan pegawai yang anda mahu berjumpa supaya dapat berjumpa tanpa ada halangan.
+                             </p>  
+                                
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
                             data-wow-delay="0.6s">
-                            <h1 class="text-white mb-4">Make Appointment</h1>
+                            <h1 class="text-white mb-4">TEMU JANJI</h1>
                             <form>
                                 <div class="row g-3">
                                     <div class="col-12 col-sm-6">
                                         <select class="form-select bg-light border-0" style="height: 55px;">
-                                            <option selected>Select A Service</option>
-                                            <option value="1">Service 1</option>
-                                            <option value="2">Service 2</option>
-                                            <option value="3">Service 3</option>
+                                            <option selected>Pilih Sektor</option>
+                                            <option value="1">Sektor Sektor Perancangan</option>
+                                            <option value="2">Sektor Pembelajaran</option>
+                                            <option value="3">Sektor Pengurusan Sekolah</option>
+                                            <option value="4">Sektor Pembangunan Murid</option>
+                                            <option value="5">Sektor Kaunseling Dan Psikologi</option>
+                                            <option value="5">Sektor Pentaksiran Dan Peperiksaan</option>
+                                            <option value="7">Sektor Pengurusan</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <select class="form-select bg-light border-0" style="height: 55px;">
-                                            <option selected>Select Doctor</option>
-                                            <option value="1">Doctor 1</option>
-                                            <option value="2">Doctor 2</option>
-                                            <option value="3">Doctor 3</option>
+                                            <option selected>Pilihan Pegawai</option>
+                                            <option value="1">Unit Perancangan</option>
+                                            <option value="2">Unit Pembelajaran</option>
+                                            <option value="3">Unit Pengurusan Sekolah</option>
+                                            <option value="3">Unit Pembangunan Murid</option>
+                                            <option value="3">Unit Kaunseling Dan Psikologi</option>
+                                            <option value="3">Unit Pentaksiran Dan Peperiksaan</option> 
+                                            <option value="3">Unit Pengurusan</option>
                                         </select>
                                     </div>
                                     <div class="col-12 col-sm-6">
@@ -77,7 +85,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Make Appointment</button>
+                                        <button class="btn btn-dark w-100 py-3" type="submit">sila Buat Temu Janji</button>
                                     </div>
                                 </div>
                             </form>

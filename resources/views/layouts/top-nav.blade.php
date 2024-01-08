@@ -44,8 +44,8 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="{{ route('home') }}" class="navbar-brand p-0">
-            {{-- <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>Pejabat Pendidikan Daerah Bintulu</h1> --}}
-            <img src="{{ asset('img/loggo.jpg') }}" alt="Pejabat Pendidikan Daerah Bintulu" style="max-height: 6rem !important;">
+            {{-- <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DentCare</h1> --}}
+            <img src="{{ asset('img/logo.png') }}" alt="Pejabat Pendidikan Daerah Bintulu" style="max-height: 6rem !important;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>

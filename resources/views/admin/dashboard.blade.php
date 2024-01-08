@@ -19,7 +19,7 @@
                     <div class="col-lg-7">
                         <div class="section-title mb-4">
                             <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                            <h1 class="display-5 mb-0">The World's Best Dental Clinic That You Can Trust</h1>
+                            <h1 class="display-5 mb-0">Selamat Datang Ke Pejabat Pendidikan Daerah Bintulu</h1>
                         </div>
                         <h4 class="text-body fst-italic mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no
                             lorem sit clita duo justo magna dolore</h4>
