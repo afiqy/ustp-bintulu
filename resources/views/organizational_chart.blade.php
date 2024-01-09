@@ -18,24 +18,17 @@
                 <div class="row g-5">
                     <div class="col-lg-5">
                         <div class="section-title mb-4">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Falsafah Pendidikan Kebangsaan
-</h5>
-                            <h1 class="display-5 mb-0">Falsafah Pendidikan Kebangsaan
-</h1>
-                        </div>
-                        <p class="mb-4">Pendidikan di Malaysia adalah suatu usaha berterusan ke arah lebih memperkembangkan potensi individu secara menyeluruh dan bersepadu 
-                                        untuk mewujudkan insan yang seimbang dan harmonis dari segi intelek, rohani, emosi dan jasmani, berdasarkan kepercayaan dan kepatuhan kepada Tuhan.
-                                        Usaha ini adalah bagi melahirkan warganegara Malaysia yang berilmu pengetahuan, 
-                                        berketrampilan, berakhlak mulia, bertanggungjawab dan berkeupayaan mencapai kesejahteraan diri, 
-                                        serta memberi sumbangan terhadap keharmonian dan kemakmuran keluarga, masyarakat dan negara.</p>
-                        <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Untuk Temu Janji</h5>
-                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">+086-331627</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">CARTA ORGANISASI</h5>
+                            <h1 class="display-10 mb-100">PENGURUSAN TERTINGGI PPD BINTULU</h1>
+                        <p class="mb-4">PEJABAT PENDIDIKAN DAERAH BINTULU</p>
+                        <h5 class="text-uppercase text-primary wow fadeInUp" data-wow-delay="0.3s">Call for Appointment</h5>
+                        <h1 class="wow fadeInUp" data-wow-delay="0.6s">+086331627</h1>
                     </div>
                     <div class="col-lg-7">
                         <div class="owl-carousel price-carousel wow zoomIn" data-wow-delay="0.9s">
                             <div class="price-item pb-4">
                                 <div class="position-relative">
-                                    <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
+                                    <img class="img-fluid rounded-top" src="img/spengurusan.jpg" alt="">
                                     <div class="d-flex align-items-center justify-content-center bg-light rounded pt-2 px-3 position-absolute top-100 start-50 translate-middle"
                                         style="z-index: 2;">
                                         <h2 class="text-primary m-0">$35</h2>

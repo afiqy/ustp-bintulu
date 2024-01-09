@@ -43,24 +43,24 @@
                 <div class="row gx-0">
                     <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                         <div class="bg-primary d-flex flex-column p-5" style="height: 450px;">
-                            <h3 class="text-white mb-3">{{ __('Sistem Dalam Talian') }}</h3>
+                            <h3 class="text-white mb-3">{{ __('Sektor Dan Unit') }}</h3>
                             <div class="row">
                                 <div class="col dropdown">
                                     <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                         id="dropdownSpr" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false" style="border-radius: 15px;">
-                                        <img src="{{ asset('custom-icons/SPr.png') }}" width="80%"
+                                        <img src="{{ asset('custom-icons/perancangan.png') }}" width="80%"
                                             style="max-width: 100px; border-radius: 15px;"
                                             alt="{{ __('Sektor Perancangan (SPr)') }}">
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownSpr">
-                                        <a class="dropdown-item" href="{{ url('https://emisonline.moe.gov.my/index.php') }}" target="__blank" alt="{{ __('EMIS') }}" title="{{ __('EMIS') }}">
-                                            <img src="{{ asset('custom-icons/EMIS.png') }}"  width="80%"
+                                        <a class="dropdown-item" href="{{ url('https://emisonline.moe.gov.my/') }}" target="__blank" alt="{{ __('EMIS') }}" title="{{ __('EMIS') }}">
+                                            <img src="{{ asset('custom-icons/emis.png') }}"  width="80%"
                                             style="max-width: 85px; border-radius: 15px;" alt="{{ __('EMIS') }}" title="{{ __('EMIS') }}">
                                         </a>
-                                        <a class="dropdown-item" href="{{ url('https://idme.moe.gov.my/login/') }}" target="__blank" alt="{{ __('MOEIS') }}" title="{{ __('MOEIS') }}">
-                                            <img src="{{ asset('custom-icons/MOEIS.png') }}"  width="80%"
+                                        <a class="dropdown-item" href="{{ url('https://idme.moe.gov.my/login') }}" target="__blank" alt="{{ __('MOEIS') }}" title="{{ __('MOEIS') }}">
+                                            <img src="{{ asset('custom-icons/moeis.png') }}"  width="80%"
                                             style="max-width: 85px; border-radius: 15px;" alt="{{ __('MOEIS') }}" title="{{ __('MOEIS') }}">
                                         </a>
                                         <a class="dropdown-item" href="{{ url('https://www.moe.gov.my/pendidikan/pendidikan-rendah/pendaftaran-sr/') }}" target="__blank" alt="{{ __('eDaftar') }}" title="{{ __('eDaftar') }}">
@@ -79,9 +79,9 @@
                                     <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                         id="dropdownSpr" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false" style="border-radius: 15px;">
-                                        <img src="{{ asset('custom-icons/SPM.png') }}" width="80%"
+                                        <img src="{{ asset('custom-icons/pembelajaran.png') }}" width="80%"
                                             style="max-width: 100px; border-radius: 15px;"
-                                            alt="{{ __('Sektor Pembangunan Murid (SPM)') }}">
+                                            alt="{{ __('Sektor Pembelajaran') }}">
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownSpr">
@@ -120,18 +120,18 @@
                                             <div class="accordion-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <a href="https://nkra.moe.gov.my/index.php">
-                                                            <img src="{{ asset('custom-icons/SPr.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        <a href="https://emisonline.moe.gov.my/">
+                                                            <img src="{{ asset('custom-icons/emis.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <a href="https://nkra.moe.gov.my/index.php">
-                                                            <img src="{{ asset('custom-icons/SKPMG2.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        <a href="https://idme.moe.gov.my/login">
+                                                            <img src="{{ asset('custom-icons/moeis.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <a href="https://emisonline.moe.gov.my/index.php">
-                                                            <img src="{{ asset('custom-icons/EMIS.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        <a href="https://www.moe.gov.my/pendidikan/pendidikan-rendah/pendaftaran-sr">
+                                                            <img src="{{ asset('custom-icons/edaftar.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
                                                         </a>
                                                     </div>
                                                 </div>

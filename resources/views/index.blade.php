@@ -14,24 +14,22 @@
                         <img class="w-100" src="img/ppd 1.jpg" alt="Image">
                         <div class="carousel-caption-sub d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 900px;">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Shine Bintulu Shine
-                                <h1 class="display-1 text-white mb-md-4 animated zoomIn">Bintulu Peneraju Transformasi pendidikan Sarawak Tahun 2030
-                                </h1>
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown"></h5>
+                                <h1 class="display-1 text-white mb-md-4 animated zoomIn"></h1>
                                 <a href="appointment.html"
-                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Contact
-                                    Us</a>
+                                    class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"></a>
+                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden">Kembali</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden">Seterusnya</span>
                 </button>
             </div>
         </div>
@@ -41,28 +39,36 @@
         <!-- Banner Start -->
         <div class="container-fluid banner mb-5">
             <div class="container">
-                <div class="row gx-0" style="height: 300px;">
-                    <div class="col-lg" >
-                        <div class="bg-primary d-flex flex-column p-5" style="height: 300px;">
-                            <h3 class="text-white mb-3">{{ __('Sistem Online') }}</h3>
+                <div class="row gx-0">
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                        <div class="bg-primary d-flex flex-column p-5" style="height: 250px;">
+                            <h3 class="text-white mb-3">{{ __('Sektor & Unit') }}</h3>
                             <div class="row">
                                 <div class="col dropdown">
                                     <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                         id="dropdownSpr" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false" style="border-radius: 15px;">
-                                        <img src="{{ asset('custom-icons/SPr.png') }}" width="80%"
-                                            style="max-width: 100px; border-radius: 15px;"
-                                            alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                        <img src="{{ asset('custom-icons/perancangan.png') }}" width="100%"
+                                            style="max-width: 80px; border-radius: 15px;"
+                                            alt="{{ __('Sektor Perancangan') }}">
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownSpr">
-                                        <a class="dropdown-item" href="{{ url('https://nkra.moe.gov.my/index.php') }}" target="__blank" alt="{{ __('SKPMg2') }}" title="{{ __('SKPMg2') }}">
-                                            <img src="{{ asset('custom-icons/SKPMG2.png') }}"  width="80%"
-                                            style="max-width: 85px; border-radius: 15px;" alt="{{ __('SKPMg2') }}" title="{{ __('SKPMg2') }}">
+                                        <a class="dropdown-item" href="{{ url('https://emisonline.moe.gov.my/') }}" target="__blank" alt="{{ __('EMIS') }}" title="{{ __('EMIS') }}">
+                                            <img src="{{ asset('custom-icons/emis.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('EMIS') }}" title="{{ __('EMIS') }}">
                                         </a>
-                                        <a class="dropdown-item" href="{{ url('https://pidp.moe.gov.my/') }}" target="__blank" alt="{{ __('ePDIP') }}" title="{{ __('ePDIP') }}">
-                                            <img src="{{ asset('custom-icons/ePDIP.png') }}"  width="80%"
-                                            style="max-width: 85px; border-radius: 15px;" alt="{{ __('ePDIP') }}" title="{{ __('ePDIP') }}">
+                                        <a class="dropdown-item" href="{{ url('https://idme.moe.gov.my/login') }}" target="__blank" alt="{{ __('MOEIS') }}" title="{{ __('MOEIS') }}">
+                                            <img src="{{ asset('custom-icons/moeis.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('MOEIS') }}" title="{{ __('MOEIS') }}">
+                                        </a>
+                                        <a class="dropdown-item" href="{{ url('https://www.moe.gov.my/pendidikan/pendidikan-rendah/pendaftaran-sr') }}" target="__blank" alt="{{ __('eDaftar') }}" title="{{ __('eDaftar') }}">
+                                            <img src="{{ asset('custom-icons/edaftar.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('eDaftar') }}" title="{{ __('eDaftar') }}">
+                                        </a>
+                                        <a class="dropdown-item" href="{{ url('https://eprestasi.moe.gov.my/') }}" target="__blank" alt="{{ __('ePrestasi') }}" title="{{ __('ePrestasi') }}">
+                                            <img src="{{ asset('custom-icons/eprestasi.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('ePrestasi') }}" title="{{ __('ePrestasi') }}">
                                         </a>
                                     </div>
                                 </div>
@@ -70,19 +76,35 @@
                                     <a class="btn btn-primary dropdown-toggle" href="#" role="button"
                                         id="dropdownSpr" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false" style="border-radius: 15px;">
-                                        <img src="{{ asset('custom-icons/SPr.png') }}" width="80%"
-                                            style="max-width: 100px; border-radius: 15px;"
-                                            alt="{{ __('Sektor Pembangunan (SPbM)') }}">
+                                        <img src="{{ asset('custom-icons/pembelajaran.png') }}" width="100%"
+                                            style="max-width: 80px; border-radius: 15px;"
+                                            alt="{{ __('Sektor Pembelajaran') }}">
                                     </a>
 
                                     <div class="dropdown-menu" aria-labelledby="dropdownSpr">
                                         <a class="dropdown-item" href="{{ url('https://nkra.moe.gov.my/index.php') }}" target="__blank" alt="{{ __('SKPMg2') }}" title="{{ __('SKPMg2') }}">
-                                            <img src="{{ asset('custom-icons/SKPMG2.png') }}"  width="80%"
-                                            style="max-width: 85px; border-radius: 15px;" alt="{{ __('SKPMg2') }}" title="{{ __('SKPMg2') }}">
+                                            <img src="{{ asset('custom-icons/pembelajaran.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('SKPMg2') }}" title="{{ __('SKPMg2') }}">
                                         </a>
                                         <a class="dropdown-item" href="{{ url('https://pidp.moe.gov.my/') }}" target="__blank" alt="{{ __('ePDIP') }}" title="{{ __('ePDIP') }}">
-                                            <img src="{{ asset('custom-icons/ePDIP.png') }}"  width="80%"
-                                            style="max-width: 85px; border-radius: 15px;" alt="{{ __('ePDIP') }}" title="{{ __('ePDIP') }}">
+                                            <img src="{{ asset('custom-icons/pembelajaran.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('ePDIP') }}" title="{{ __('ePDIP') }}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" role="button"
+                                        id="dropdownSpr" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" style="border-radius: 15px;">
+                                        <img src="{{ asset('custom-icons/pengurusansekolah.png') }}" width="100%"
+                                            style="max-width: 80px; border-radius: 15px;"
+                                            alt="{{ __('Sektor Pengurusan Sekolah') }}">
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownSpr">
+                                        <a class="dropdown-item" href="{{ url('https://eoperasi.moe.gov.my/') }}" target="__blank" alt="{{ __('eOperasi') }}" title="{{ __('eOperasi') }}">
+                                            <img src="{{ asset('custom-icons/eoperasi.png') }}"  width="80%"
+                                            style="max-width: 55px; border-radius: 15px;" alt="{{ __('eOperasi') }}" title="{{ __('eOperasi') }}">
                                         </a>
                                     </div>
                                 </div>
@@ -92,7 +114,7 @@
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                                 data-bs-target="#collapseSPr" aria-expanded="true"
                                                 aria-controls="collapseSPr">
-                                                {{ __('Sektor Perancangan (SPr)') }}
+                                                {{ __('Sektor Perancangan') }}
                                             </button>
                                         </h2>
                                         <div id="collapseSPr" class="accordion-collapse collapse show"
@@ -100,13 +122,23 @@
                                             <div class="accordion-body">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <a href="https://nkra.moe.gov.my/index.php">
-                                                            <img src="{{ asset('custom-icons/SPr.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        <a href="https://emisonline.moe.gov.my/">
+                                                            <img src="{{ asset('custom-icons/emis.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
                                                         </a>
                                                     </div>
                                                     <div class="col">
-                                                        <a href="https://nkra.moe.gov.my/index.php">
-                                                            <img src="{{ asset('custom-icons/SKPMG2.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        <a href="https://idme.moe.gov.my/login">
+                                                            <img src="{{ asset('custom-icons/moeis.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://www.moe.gov.my/pendidikan/pendidikan-rendah/pendaftaran-sr">
+                                                            <img src="{{ asset('custom-icons/edaftar.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="https://eprestasi.moe.gov.my/">
+                                                            <img src="{{ asset('custom-icons/eprestasi.png') }}" width="80%;" style="border-radius: 25px;" alt="{{ __('Sektor Perancangan (SPr)') }}">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -161,83 +193,22 @@
                             </div>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-4 wow zoomIn" >
-                        <div class="bg-dark d-flex flex-column p-5" style="height: 450px;">
-                            <h3 class="text-white mb-3">{{ __('Warga PPD') }}</h3>
-                            <div class="date mb-3" id="date" data-target-input="nearest">
-                                <input type="text" class="form-control bg-light border-0 datetimepicker-input"
-                                    placeholder="Tarikh" data-target="#date" data-toggle="datetimepicker"
-                                    style="height: 40px;">
-                            </div>
-                            <select class="form-select bg-light border-0 mb-3" style="height: 40px;">
-                                <option selected>Pilih Sektor</option>
-                                <option value="1">Sektor Sektor Perancangan</option>
-                                            <option value="2">Sektor Pembelajaran</option>
-                                            <option value="3">Sektor Pengurusan Sekolah</option>
-                                            <option value="4">Sektor Pembangunan Murid</option>
-                                            <option value="5">Sektor Kaunseling Dan Psikologi</option>
-                                            <option value="5">Sektor Pentaksiran Dan Peperiksaan</option>
-                                            <option value="7">Sektor Pengurusan</option>
-                            </select>
-                            <a class="btn btn-light" href="">Pilihan Pegawai</a>
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="bg-dark d-flex flex-column p-5" style="height: 250px;">
+                            <h3 class="text-white mb-3">{{ __('Pengumuman') }}</h3>
+                            <p class="text-white">Sekolah Penggal pertama pada tahun 2024 akan dibuka pada 01 Mac 2024.</p>
                         </div>
                     </div>
-                </div>
-                <div class="row gx-0">
-                    
-                <div class="col-lg-4 wow zoomIn">
-                        <div class="bg-secondary d-flex flex-column p-5" style="height: 450px;">
-                            <h3 class="text-white mb-3">Sila Buat Temu Janji</h3>
-                            <p class="text-white">Jika Anda ingin berjumpa pegawai yang berkenaan sila membuat temujanji supaya anda tidak lama menunggu.</p>
-                            <h2 class="text-white mb-0">+086-331627</h2>
+                    <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-secondary d-flex flex-column p-5" style="height: 250px;">
+                            <h3 class="text-white mb-3">Kenyataan Media</h3>
+                            <p class="text-white">Sila memakai pelitup muka jika berkunjung ke pejabat kami.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Banner Start -->
-
-
-        <!-- About Start -->
-        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-7">
-                        <div class="section-title mb-4">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">About Us</h5>
-                            <h1 class="display-5 mb-0">{{__('Profil Jabatan')}}</h1>
-                        </div>
-                        <h4 class="text-body fst-italic mb-4">Pejabat Pendidikan Daerah Bintulu terletak di Jln Sultan Iskandar, Kampung Baru Bintulu, 97000 Bintulu, Sarawak, Malaysia, berhampiran tempat ini: Pejabat Mara (1 km), Pejabat PERBINDA Perbandaraan (BDA) (1 km), 
-                            Wisma Bintulu (2 km), Jabatan Pendaftaran Bintulu (3 km), Jabatan Tenaga Kerja Bintulu (3 km).</h4>
-                         <p class="mb-4">PPD Bintulu komited dalam meningkatkan kecekapan dan keberkesanan tadbir urus serta proses penyampaian perkhidmatan bagi memenuhi kehendak pelanggan dan 
-                            aspirasi negara selaras dengan matlamat dan Falsafah Pendidikan Kebangsaan.</p>
-                        <div class="row g-3">
-                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.3s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Pegawai Ikhtisas</h5>
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Anggota Kumpulan Pelaksana
-                                </h5>
-                            </div>
-                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Isnin Hingga Jumaat</h5>
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>8.00 Pagi Hingga 5 Petang</h5>
-                            </div>
-                        </div>
-                        <a href="appointment.html" class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
-                            data-wow-delay="0.6s">Buat Temu Janji Anda</a>
-                    </div>
-                    <div class="col-lg-5" style="min-height: 500px;">
-                        <div class="position-relative h-100">
-                            <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                                src="img/ppd1-1.jpg" style="object-fit: cover;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
 
 
         <!-- Appointment Start -->
@@ -254,62 +225,7 @@
                     <div class="col-lg-6">
                         <div class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
                             data-wow-delay="0.6s">
-                            <h1 class="text-white mb-4">Temu Janji</h1>
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-12 col-sm-6">
-                                        <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Pilih Sektor</option>
-                                            <option value="1">Sektor Sektor Perancangan
-                                            <option value="2">Sektor Pembelajaran</option>
-                                            <option value="3">Sektor Pengurusan Sekolah</option>
-                                            <option value="4">Sektor Pembangunan Murid</option>
-                                            <option value="5">Sektor Kaunseling Dan Psikologi</option>
-                                            <option value="5">Sektor Pentaksiran Dan Peperiksaan</option>
-                                            <option value="7">Sektor Pengurusan</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <select class="form-select bg-light border-0" style="height: 55px;">
-                                             <option selected>Pilihan Pegawai</option>
-                                            <option value="1">Unit Perancangan</option>
-                                            <option value="2">Unit Pembelajaran</option>
-                                            <option value="3">Unit Pengurusan Sekolah</option>
-                                            <option value="3">Unit Pembangunan Murid</option>
-                                            <option value="3">Unit Kaunseling Dan Psikologi</option>
-                                            <option value="3">Unit Pentaksiran Dan Peperiksaan</option> 
-                                            <option value="3">Unit Pengurusan</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <input type="text" class="form-control bg-light border-0"
-                                            placeholder="Your Name" style="height: 55px;">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <input type="email" class="form-control bg-light border-0"
-                                            placeholder="Your Email" style="height: 55px;">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="date" id="date1" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control bg-light border-0 datetimepicker-input"
-                                                placeholder="Appointment Date" data-target="#date1"
-                                                data-toggle="datetimepicker" style="height: 55px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <div class="time" id="time1" data-target-input="nearest">
-                                            <input type="text"
-                                                class="form-control bg-light border-0 datetimepicker-input"
-                                                placeholder="Appointment Time" data-target="#time1"
-                                                data-toggle="datetimepicker" style="height: 55px;">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Temu Janji</button>
-                                    </div>
-                                </div>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -324,30 +240,30 @@
                 <div class="row g-5 mb-5">
                     <div class="col-lg-5 wow zoomIn" data-wow-delay="0.3s" style="min-height: 400px;">
                         <div class="twentytwenty-container position-relative h-100 rounded overflow-hidden">
-                            <img class="position-absolute w-100 h-100" src="img/ppd 1.jpg" style="object-fit: cover;">
-                            <img class="position-absolute w-100 h-100" src="img/ppd1-1.jpg" style="object-fit: cover;">
+                            <img class="position-absolute w-100 h-100" src="img/gambar1.jpg" style="object-fit: cover;">
+                            <img class="position-absolute w-100 h-100" src="img/after.jpg" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="section-title mb-5">
-                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Servis</h5>
-                            <h1 class="display-5 mb-0">Kami akan memberi layanan yang terbaik kepada anda</h1>
+                            <h5 class="position-relative d-inline-block text-primary text-uppercase">Galeri Kami</h5>
+                            <h1 class="display-5 mb-0">Aktiviti Warga PPD</h1>
                         </div>
                         <div class="row g-5">
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/team-2.png" alt="">
+                                    <img class="img-fluid" src="img/calonspm.jpg" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Sektor Perancangan</h5>
+                                    <h5 class="m-0">Program Solat Hajat Perdana Pelajar Islam SPM Dan STPM 2023/2024 Peringkat Daerah Bintulu</h5>
                                 </div>
                             </div>
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.9s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/team-3.png" alt="">
+                                    <img class="img-fluid" src="img/pemberkatan.jpg" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Sektor Pembelajaran</h5>
+                                    <h5 class="m-0">Program Pemberkatan Calon SPM dan STPM Daerah Bintulu Tahun 2023/2024</h5>
                                 </div>
                             </div>
                         </div>
@@ -358,18 +274,18 @@
                         <div class="row g-5">
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.3s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/Team-4.png" alt="">
+                                    <img class="img-fluid" src="img/hariterbuka.jpg" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Sektor Pengurusan Sekolah</h5>
+                                    <h5 class="m-0">Hari Kerjaya & Pendidikan Dan Hari Terbuka PPD Bintulu</h5>
                                 </div>
                             </div>
                             <div class="col-md-6 service-item wow zoomIn" data-wow-delay="0.6s">
                                 <div class="rounded-top overflow-hidden">
-                                    <img class="img-fluid" src="img/Team-5.jpg" alt="">
+                                    <img class="img-fluid" src="img/riadahjumaat.jpg" alt="">
                                 </div>
                                 <div class="position-relative bg-light rounded-bottom text-center p-4">
-                                    <h5 class="m-0">Sektor Pembangunan Murid</h5>
+                                    <h5 class="m-0">The Biggest Loser Siri 1</h5>
                                 </div>
                             </div>
                         </div>
