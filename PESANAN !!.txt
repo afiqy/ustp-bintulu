@@ -1,1 +1,0 @@
-Untuk user yg belom login atau register, user ya hanya dpt access login page dan register page jak.Bila kita tekan home page nya akan pergi login page balit. Boleh tolong ka untuk berik user yg belom login boleh access semua mcm home page, page pendidikan etc, kelak kmk ator selebihnya, just mintak tolong utk tok jak supaya public user boleh access juak. TQ 
