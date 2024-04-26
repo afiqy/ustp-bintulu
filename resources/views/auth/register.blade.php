@@ -1,5 +1,5 @@
-@extends ('layouts.app')
-@section ('content')
+@extends('layouts.app')
+@section('content')
     <section>
         <!-- Hero Start -->
         <div class="container-fluid bg-primary py-5 hero-header mb-5">
@@ -42,27 +42,6 @@
                                         <input class="form-control block mt-1 w-full" id="phone_number" type="tel" name="phone_number" required />
                                     </div>
 
-                                    <!-- Sektor -->
-                                     <div class="mt-4">
-                                        <label for="sektor">{{ __('Sektor') }}</label>
-                                        <select class="form-control" id="sektor" class="block mt-1 w-full" name="sektor" required>
-                                            <option value="" disabled selected>{{ __('Pilih Sektor') }}</option>
-                                            <option value="1">{{ __('Sektor Perancangan') }}</option>
-                                            <option value="2">{{ __('Sektor Pembelajaran') }}</option>
-                                            <option value="3">{{ __('Sektor Pengurusan Sekolah') }}</option>
-                                            <option value="4">{{ __('Sektor Pembangunan Murid') }}</option>
-                                            <option value="5">{{ __('Sektor Psikologi & Kaunseling') }}</option>
-                                            <option value="6">{{ __('Sektor Pentaksiran & Peperiksaan') }}</option>
-                                            <option value="7">{{ __('Sektor Pengurusan') }}</option>
-                                            <!-- Add options for other sectors -->
-                                        </select>
-                                    </div>
-
-                                    <!-- Jawatan -->
-                                    <div class="mt-4">
-                                        <label for="jawatan">{{ __('Jawatan') }}</label>
-                                        <input class="form-control" id="jawatan" class="block mt-1 w-full" type="text" name="jawatan" required />
-                                    </div>
 
                                     <!-- Password -->
                                     <div class="mt-4">
