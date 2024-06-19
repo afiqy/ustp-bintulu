@@ -23,14 +23,12 @@ class RedirectIfAuthenticated
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
                 // If the user is authenticated and trying to access the login or register page, redirect them to the home page.
-                if ($request->route()->named('login')) {
+                if ($request->route()->named('login') || $request->route()->named('register')) {
                     return redirect()->route('home');
                 }
     
-                // If the user is authenticated and trying to access any other route (except register), redirect them back.
-                if (!$request->route()->named('register')) {
-                    return redirect()->back();
-                }
+                // If the user is authenticated and trying to access any other route, redirect them back.
+                return redirect()->back();
             }
         }
 

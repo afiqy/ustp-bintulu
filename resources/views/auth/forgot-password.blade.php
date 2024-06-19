@@ -1,43 +1,69 @@
-<x-guest-layout>
+@extends('layouts.app')
 
-    <x-slot name="header">
-        {{ __('Forgot Password') }}
-    </x-slot>
-    <x-auth.card>
-        {{-- <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot> --}}
+@section('content')
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">{{ __('Lupa Kata Laluan') }}</div>
+                    <div class="card-body">
+                        <div class="mb-4 text-sm text-gray-600">
+                            {{ __('Lupa kata laluan anda? Tiada masalah. Beritahu kami alamat emel anda dan kami akan menghantar pautan tetapan semula kata laluan melalui emel yang membolehkan anda memilih yang baru.') }}
+                        </div>
 
-        <div class="card-content card-body">
-            <div class="mb-4 text-sm text-gray-600">
-                {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+                        <!-- Session Status -->
+                        @if (session('status'))
+                            <div class="mb-4 text-green-600">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+
+                        <!-- Validation Errors -->
+                        @if ($errors->any())
+                            <div class="mb-4 text-red-600">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+                        <form method="POST" action="{{ route('password.email') }}">
+                            @csrf
+
+                            <!-- Email Address -->
+                            <div class="form-group">
+                                <label for="email">{{ __('Emel') }}</label>
+                                <input id="email" type="email" name="email" value="{{ old('email') }}"
+                                    class="form-control @error('email') is-invalid @enderror" required autofocus>
+                            </div>
+
+                            <div class="flex items-center justify-end mt-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Emel Pautan Tetapan Semula Kata Laluan') }}
+                                </button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="{{ route('login') }}" class="btn btn-link">Kembali ke Log Masuk</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-
-            <!-- Session Status -->
-            <x-auth.session-status class="mb-4" :status="session('status')" />
-
-            <!-- Validation Errors -->
-            <x-auth.validation-errors class="mb-4" :errors="$errors" />
-
-            <form method="POST" action="{{ route('password.email') }}">
-                @csrf
-
-                <!-- Email Address -->
-                <div>
-                    <x-form.label for="email" :value="__('Email')" />
-
-                    <x-form.input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
-                        required autofocus />
-                </div>
-
-                <div class="flex items-center justify-end mt-4">
-                    <x-button.button class="btn btn-sm btn-primary glow position-relative px-1 py-1">
-                        {{ __('Email Password Reset Link') }}
-                    </x-button.button>
-                </div>
-            </form>
         </div>
-    </x-auth.card>
-</x-guest-layout>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+@endsection

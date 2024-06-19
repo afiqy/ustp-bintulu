@@ -39,17 +39,18 @@ class UserController extends Controller
             'password.min' => '\'Password\' must be at least 8 characters long!',
             'password.confirmed' => 'The password confirmation does not match!',
         ]);
-
-        if($validate){
-            $user = User::find($request->id);
-            $user->update([
-                'name' => $request->name,
-                'email' => $request->email,
-                'phone_number' => $request->phone_number,
-                'password' => Hash::make($request->password)
-            ]);
-        }
-
+    
+        // If validation fails, Laravel will automatically redirect back with error messages
+        // and the code below won't be executed
+        $user = User::find($request->id);
+        $user->update([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone_number' => $request->phone_number,
+            'password' => Hash::make($request->password)
+        ]);
+    
         return redirect()->route('user-profile')->with('success', 'Your profile has been updated successfully!');
     }
+    
 }

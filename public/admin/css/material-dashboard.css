@@ -2764,7 +2764,6 @@ progress {
 .form-control::file-selector-button {
   padding: 0.5rem 0;
   margin: -0.5rem 0;
-  -webkit-margin-end: 0;
   margin-inline-end: 0;
   color: #495057;
   background-color: transparent;
@@ -2790,7 +2789,6 @@ progress {
 .form-control::-webkit-file-upload-button {
   padding: 0.5rem 0;
   margin: -0.5rem 0;
-  -webkit-margin-end: 0;
   margin-inline-end: 0;
   color: #495057;
   background-color: transparent;
@@ -2843,14 +2841,12 @@ progress {
 .form-control-sm::file-selector-button {
   padding: 0.25rem 0.75rem;
   margin: -0.25rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
   margin-inline-end: 0.75rem;
 }
 
 .form-control-sm::-webkit-file-upload-button {
   padding: 0.25rem 0.75rem;
   margin: -0.25rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
   margin-inline-end: 0.75rem;
 }
 
@@ -2864,14 +2860,12 @@ progress {
 .form-control-lg::file-selector-button {
   padding: 0.75rem 0.75rem;
   margin: -0.75rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
   margin-inline-end: 0.75rem;
 }
 
 .form-control-lg::-webkit-file-upload-button {
   padding: 0.75rem 0.75rem;
   margin: -0.75rem -0.75rem;
-  -webkit-margin-end: 0.75rem;
   margin-inline-end: 0.75rem;
 }
 
@@ -7383,7 +7377,6 @@ fieldset:disabled .btn {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
@@ -20925,7 +20918,6 @@ fieldset:disabled .btn {
 
 .rotating-card-container .card .back,
 .rotating-card-container .card .front {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
   background-color: #fff;
@@ -21020,7 +21012,6 @@ fieldset:disabled .btn {
 
   .rotating-card-container .card .back,
   .rotating-card-container .card .front {
-    -webkit-backface-visibility: visible;
     backface-visibility: visible;
   }
 
@@ -21311,7 +21302,6 @@ body.dark-version {
     margin-top: 2.8125rem !important;
     pointer-events: none;
     transform: scale(0.95) !important;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform, box-shadow;
   }
@@ -21379,7 +21369,6 @@ body.dark-version {
     pointer-events: none;
     transform: scale(0.95) !important;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform, box-shadow;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -21425,7 +21414,6 @@ body.dark-version {
     pointer-events: none;
     transform: scale(0.95) !important;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     will-change: transform, box-shadow;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -21555,7 +21543,6 @@ body.dark-version {
   transform-origin: bottom;
   pointer-events: none;
   transform: scale(0.95) !important;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   will-change: transform, box-shadow;
 }
@@ -22566,7 +22553,6 @@ svg.text-dark .color-background {
   transform-origin: 50% 0;
   transform-origin: 50% 0;
   transform: perspective(999px) rotateX(0deg) translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   will-change: transform, box-shadow;
 }
@@ -26654,7 +26640,6 @@ span.flatpickr-weekday {
 }
 
 .noUi-handle {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: absolute;
 }

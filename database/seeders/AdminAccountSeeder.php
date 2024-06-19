@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 //Models
-use App\Models\User;
+use App\Models\Admin;
 use App\Models\Roles;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
@@ -19,12 +19,11 @@ class AdminAccountSeeder extends Seeder
      */
     public function run()
     {
-        $admin = User::firstOrCreate([
-            'first_name' => 'Admin',
-            'email' => 'admin@ustpbintulu.com',
-            'username' => 'admin',
-            'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('admin123456789')
+        $admin = Admin::firstOrCreate([
+            'name' => 'Admin',
+            'email' => 'adminuser@ustpbintulu.com',
+            'password' => Hash::make('ustpbtuadmin'),
+
         ]);
 
         $data = [

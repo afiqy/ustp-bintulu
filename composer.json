@@ -6,12 +6,14 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "doctrine/dbal": "^4.0",
         "guzzlehttp/guzzle": "^7.2",
         "laracasts/flash": "^3.2",
         "laravel/framework": "^9.19",
-        "laravel/passport": "^11.6",
+        "laravel/passport": "^11.8",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
+        "laravel/ui": "^4.5",
         "silber/bouncer": "^1.0"
     },
     "require-dev": {

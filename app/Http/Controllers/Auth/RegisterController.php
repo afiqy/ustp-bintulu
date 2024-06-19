@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use Illuminate\Support\Facades\Log; // Import the Log facade
-use Illuminate\Support\Facades\Hash; // For hashing passwords
-use App\Http\Controllers\Controller; // Base controller class
-use App\Models\User; // User model for creating new users
-use Illuminate\Support\Facades\Validator; // For data validation
-use Illuminate\Foundation\Auth\RegistersUsers; // Trait providing user registration methods
-use Illuminate\Http\Request; // For handling HTTP requests
-use Illuminate\Foundation\Support\Providers\RouteServiceProvider as RouteServiceProvider;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -26,51 +25,63 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'phone_number' => ['required', 'string', 'max:255'],
-            'password' => ['required', 'string', 'confirmed'],
-            'jawatan' => ['required', 'string', 'max:255'], // Validation rules for jawatan
-            'sektor' => ['required', 'string', 'max:255'],  // Validation rules for sektor
-        ]);
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users', 'email_ends_with'],
+            'phone_number' => ['required', 'string', 'max:20'],
+            'password' => ['required', 'string', 'min:8', 'confirmed', 'password_contains_number'],
+            'jawatan' => ['required', 'string', 'max:255', 'in:ADMIN,user,other'], // Example roles
+            'sektor' => ['required', 'string'],
+        ], [
+            'name.required' => __('messages.Please enter your name.'),
+            'email.required' => __('messages.Please enter your email address.'),
+            'email.email' => __('messages.Your email address must be in the correct format.'),
+            'email.unique' => __('messages.This email address is already registered.'),
+            'email.email_ends_with' => __('messages.Alamat emel mesti diakhiri dengan @moe.gov.my atau mohammadfarishussain10@gmail.com'),
+            'phone_number.required' => __('messages.Please enter your phone number.'),
+            'password.required' => __('messages.Please enter a password.'),
+            'password.min' => __('messages.Your password must be at least 8 characters long.'),
+            'password.confirmed' => __('messages.Your password confirmation does not match.'),
+            'password.password_contains_number' => __('messages.Kata laluan mesti mengandungi sekurang-kurangnya satu nombor.'),
+            'jawatan.required' => __('messages.Please enter your job title.'),
+            'jawatan.in' => __('messages.Invalid job title.'),
+            'sektor.required' => __('messages.Please enter your sector.'),
+            
+        ])->after(function ($validator) use ($data) {
+            // Custom validation for specific emails with ADMIN role
+            if (isset($data['jawatan']) && $data['jawatan'] === 'ADMIN') {
+                $allowedEmails = [
+                    'mohammadfarishussain10@gmail.com',
+                    'evelyn.eba@moe.gov.my',
+                    'ismailhassan88@moe.gov.my',
+                    'samrisuhaili@moe.gov.my'
+                ];
+                if (!in_array($data['email'], $allowedEmails)) {
+                    $validator->errors()->add('email',  __('messages.Alamat e-mel ini tidak dibenarkan mempunyai peranan ADMIN.'));
+                }
+            }
+        });
     }
-    
+
+
     protected function create(array $data)
     {
-        try {
-            $user = User::create([
-                'name' => $data['name'],
-                'email' => $data['email'],
-                'phone_number' => $data['phone_number'],
-                'password' => Hash::make($data['password']),
-                'jawatan' => $data['jawatan'], // Add jawatan field
-                'sektor' => $data['sektor'],   // Add sektor field
-            ]);
+        $user = User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'phone_number' => $data['phone_number'],
+            'password' => Hash::make($data['password']),
+            'jawatan' => $data['jawatan'],
+            'sektor' => $data['sektor'],
+        ]);
 
-            // Log success message
-            Log::info('User registered successfully.');
+        // Send verification email
+        $user->sendEmailVerificationNotification();
 
-            return $user;
-        } catch (\Exception $e) {
-            // Log error message
-            Log::error('Error registering user: ' . $e->getMessage());
-
-            return false;
-        }
+        return $user;
     }
 
-    public function register(Request $request)
+    protected function registered(Request $request, $user)
     {
-        $this->validator($request->all())->validate();
-
-        $user = $this->create($request->all());
-
-        if ($user) {
-            $this->guard()->login($user);
-
-            return $this->registered($request, $user)
-                        ?: redirect($this->redirectPath());
-        } else {
-            return redirect()->back()->withInput()->withErrors(['error' => 'Registration failed. Please try again.']);
-        }
+        $user->sendEmailVerificationNotification();
+        return redirect()->route('verification.notice');
     }
 }

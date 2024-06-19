@@ -6,6 +6,8 @@ use Carbon\Carbon;
 use DateInterval;
 use DateTimeInterface;
 use Illuminate\Contracts\Encryption\Encrypter;
+use Laravel\Passport\Contracts\AuthorizationViewResponse as AuthorizationViewResponseContract;
+use Laravel\Passport\Http\Responses\AuthorizationViewResponse;
 use League\OAuth2\Server\ResourceServer;
 use Mockery;
 use Psr\Http\Message\ServerRequestInterface;
@@ -78,6 +80,13 @@ class Passport
     public static $keyPath;
 
     /**
+     * The access token entity class name.
+     *
+     * @var string
+     */
+    public static $accessTokenEntity = 'Laravel\Passport\Bridge\AccessToken';
+
+    /**
      * The auth code model class name.
      *
      * @var string
@@ -132,6 +141,13 @@ class Passport
      * @var bool
      */
     public static $unserializesCookies = false;
+
+    /**
+     * Indicates if Passport should decrypt cookies.
+     *
+     * @var bool
+     */
+    public static $decryptsCookies = true;
 
     /**
      * Indicates if client secrets will be hashed.
@@ -424,6 +440,17 @@ class Passport
     }
 
     /**
+     * Set the access token entity class name.
+     *
+     * @param  string  $accessTokenEntity
+     * @return void
+     */
+    public static function useAccessTokenEntity($accessTokenEntity)
+    {
+        static::$accessTokenEntity = $accessTokenEntity;
+    }
+
+    /**
      * Set the auth code model class name.
      *
      * @param  string  $authCodeModel
@@ -638,6 +665,19 @@ class Passport
     }
 
     /**
+     * Specify which view should be used as the authorization view.
+     *
+     * @param  callable|string  $view
+     * @return void
+     */
+    public static function authorizationView($view)
+    {
+        app()->singleton(AuthorizationViewResponseContract::class, function ($app) use ($view) {
+            return new AuthorizationViewResponse($view);
+        });
+    }
+
+    /**
      * Configure Passport to not register its routes.
      *
      * @return static
@@ -681,6 +721,30 @@ class Passport
     public static function withoutCookieSerialization()
     {
         static::$unserializesCookies = false;
+
+        return new static;
+    }
+
+    /**
+     * Instruct Passport to enable cookie encryption.
+     *
+     * @return static
+     */
+    public static function withCookieEncryption()
+    {
+        static::$decryptsCookies = true;
+
+        return new static;
+    }
+
+    /**
+     * Instruct Passport to disable cookie encryption.
+     *
+     * @return static
+     */
+    public static function withoutCookieEncryption()
+    {
+        static::$decryptsCookies = false;
 
         return new static;
     }

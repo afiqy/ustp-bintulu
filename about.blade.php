@@ -19,9 +19,9 @@
                     <div class="col-lg-7">
                         <div class="section-title mb-4">
                             <h5 class="position-relative d-inline-block text-primary text-uppercase">Tentang Kami</h5>
-                            <h1 class="display-5 mb-0">Pejabat Pendidikan Daerah Bintulu</h1>
+                            <h1 class="display-5 mb-0">Pejabat Pendidikan daerah Bintulu</h1>
                         </div>
-                        <h4 class="text-body fst-italic mb-4">Bintulu Peneraju Transformasi Pendidikan Sarawak Tahun 2030</h4>
+                        <h4 class="text-body fst-italic mb-4">Bintulu Peneraju Transformasi Pendidikan sarawak Tahun 2030</h4>
                         <p class="mb-4">Dasar Kualiti, PPD Bintulu komited dalam meningkatkan kecekapan dan keberkesanan tadbir urus serta proses penyampaian perkhidmatan bagi memenuhi kehendak pelanggan dan aspirasi negara selaras matlamat dan Falsafah Pendidikan kebangsaan 
                         </p>   
                     
@@ -32,7 +32,7 @@
                                 </h5>
                             </div>
                             <div class="col-sm-6 wow zoomIn" data-wow-delay="0.6s">
-                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Isnin hingga Jumaat Buka</h5>
+                                <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Isnin hingga Jumaat buka</h5>
                                 <h5 class="mb-3"><i class="fa fa-check-circle text-primary me-3"></i>Sabtu dan Ahad Tutup</h5>
                             </div>
                         </div>
@@ -58,7 +58,7 @@
                     <form class="mx-auto" style="max-width: 600px;">
                         <div class="input-group">
                             <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-dark px-4">Daftar</button>
+                            <button class="btn btn-dark px-4">Sign Up</button>
                         </div>
                     </form>
                 </div>

@@ -5,7 +5,10 @@
         <div class="container-fluid bg-primary py-5 hero-header mb-5">
             <div class="row py-3">
                 <div class="col-12 text-center">
-                    <h1 class="display-3 text-white animated zoomIn">PERKHIDMATAN DALAM TALIAN</h1>
+                    <h1 class="display-3 text-white animated zoomIn">Hubungi kami</h1>
+                    <a href="" class="h4 text-white">Laman Utama</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h4 text-white">Hubungi</a>
                 </div>
             </div>
         </div>
@@ -13,26 +16,26 @@
 
 
         <!-- Contact Start -->
-        <div class="container-fluid py-3">
+        <div class="container-fluid py-5">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-xl-4 col-lg-6 wow slideInUp" data-wow-delay="0.1s">
                         <div class="bg-light rounded h-100 p-5">
                             <div class="section-title">
-                                <h5 class="position-relative d-inline-block text-primary text-uppercase">PPD Bintulu</h5>
-                                <h3 class="display-6 mb-4">Hubungi Kami</h3>
+                                <h5 class="position-relative d-inline-block text-primary text-uppercase">Contact Us</h5>
+                                <h1 class="display-6 mb-4">Hubungi Kami Segera</h1>
                             </div>
                             <div class="d-flex align-items-center mb-2">
                                 <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                                 <div class="text-start">
-                                    <h5 class="mb-0">Pejabat Kami</h5>
+                                    <h5 class="mb-0">Pejabat</h5>
                                     <span>Pejabat Pendidikan Daerah Bintulu</span>
                                 </div>
                             </div>
                             <div class="d-flex align-items-center mb-2">
                                 <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
                                 <div class="text-start">
-                                    <h5 class="mb-0">Email</h5>
+                                    <h5 class="mb-0">Emel</h5>
                                     <span>ppdbintulu@moe.gov.my</span>
                                 </div>
                             </div>
@@ -50,21 +53,21 @@
                             <div class="row g-3">
                                 <div class="col-12">
                                     <input type="text" class="form-control border-0 bg-light px-4"
-                                        placeholder="Nama" style="height: 55px;">
+                                        placeholder="Your Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
                                     <input type="email" class="form-control border-0 bg-light px-4"
-                                        placeholder="Email" style="height: 55px;">
+                                        placeholder="Your Email" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subjek"
+                                    <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
                                         style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <textarea class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Mesej"></textarea>
+                                    <textarea class="form-control border-0 bg-light px-4 py-3" rows="5" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Hantar Mesej</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -79,5 +82,21 @@
             </div>
         </div>
         <!-- Contact End -->
+
+
+        <!-- Newsletter Start -->
+        <div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s" style="z-index: 1;">
+            <div class="container">
+                <div class="bg-primary p-5">
+                    <form class="mx-auto" style="max-width: 600px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-dark px-4">Daftar Sekarang</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Newsletter End -->
     </section>
 @endsection

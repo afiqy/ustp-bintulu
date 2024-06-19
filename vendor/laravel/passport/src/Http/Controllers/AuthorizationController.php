@@ -2,13 +2,13 @@
 
 namespace Laravel\Passport\Http\Controllers;
 
-use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Auth\StatefulGuard;
-use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Laravel\Passport\Bridge\User;
 use Laravel\Passport\ClientRepository;
+use Laravel\Passport\Contracts\AuthorizationViewResponse;
+use Laravel\Passport\Exceptions\AuthenticationException;
 use Laravel\Passport\Passport;
 use Laravel\Passport\TokenRepository;
 use League\OAuth2\Server\AuthorizationServer;
@@ -28,13 +28,6 @@ class AuthorizationController
     protected $server;
 
     /**
-     * The response factory implementation.
-     *
-     * @var \Illuminate\Contracts\Routing\ResponseFactory
-     */
-    protected $response;
-
-    /**
      * The guard implementation.
      *
      * @var \Illuminate\Contracts\Auth\StatefulGuard
@@ -42,20 +35,27 @@ class AuthorizationController
     protected $guard;
 
     /**
+     * The authorization view response implementation.
+     *
+     * @var \Laravel\Passport\Contracts\AuthorizationViewResponse
+     */
+    protected $response;
+
+    /**
      * Create a new controller instance.
      *
      * @param  \League\OAuth2\Server\AuthorizationServer  $server
-     * @param  \Illuminate\Contracts\Routing\ResponseFactory  $response
      * @param  \Illuminate\Contracts\Auth\StatefulGuard  $guard
+     * @param  \Laravel\Passport\Contracts\AuthorizationViewResponse  $response
      * @return void
      */
     public function __construct(AuthorizationServer $server,
-                                ResponseFactory $response,
-                                StatefulGuard $guard)
+                                StatefulGuard $guard,
+                                AuthorizationViewResponse $response)
     {
         $this->server = $server;
-        $this->response = $response;
         $this->guard = $guard;
+        $this->response = $response;
     }
 
     /**
@@ -65,7 +65,7 @@ class AuthorizationController
      * @param  \Illuminate\Http\Request  $request
      * @param  \Laravel\Passport\ClientRepository  $clients
      * @param  \Laravel\Passport\TokenRepository  $tokens
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Laravel\Passport\Contracts\AuthorizationViewResponse
      */
     public function authorize(ServerRequestInterface $psrRequest,
                               Request $request,
@@ -109,7 +109,7 @@ class AuthorizationController
         $request->session()->put('authToken', $authToken = Str::random());
         $request->session()->put('authRequest', $authRequest);
 
-        return $this->response->view('passport::authorize', [
+        return $this->response->withParameters([
             'client' => $client,
             'user' => $user,
             'scopes' => $scopes,
@@ -209,7 +209,7 @@ class AuthorizationController
      *
      * @param  \Illuminate\Http\Request  $request
      *
-     * @throws \Illuminate\Auth\AuthenticationException
+     * @throws \Laravel\Passport\Exceptions\AuthenticationException
      */
     protected function promptForLogin($request)
     {

@@ -1,0 +1,9 @@
+/.gitattributes export-ignore
+/.github        export-ignore
+/.gitignore     export-ignore
+/.travis.yml    export-ignore
+/assets         export-ignore
+/nitpick.json   export-ignore
+/phpunit.xml    export-ignore
+/readme.md      export-ignore
+/tests          export-ignore

@@ -11,6 +11,7 @@ use GuzzleHttp\Client;
 
 class HttpClient
 {
+    
     public static function client()
     {
         $client = new Client([
@@ -69,6 +70,7 @@ class HttpClient
             ],
             'http_errors' => false
         ]);
+        dd($access_token);
         $response = $client->request($method, $url, ['json' => $json]);
         if ($response->getStatusCode() == 401) {
             abort(401, 'Your session is expired. Please login again.');

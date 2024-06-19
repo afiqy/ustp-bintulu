@@ -214,7 +214,7 @@ class TokenGuard implements Guard
      * Authenticate and get the incoming PSR-7 request via the Bearer token.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Psr\Http\Message\ServerRequestInterface
+     * @return \Psr\Http\Message\ServerRequestInterface|null
      */
     protected function getPsrRequestViaBearerToken($request)
     {
@@ -295,8 +295,12 @@ class TokenGuard implements Guard
      */
     protected function decodeJwtTokenCookie($request)
     {
+        $jwt = $request->cookie(Passport::cookie());
+
         return (array) JWT::decode(
-            CookieValuePrefix::remove($this->encrypter->decrypt($request->cookie(Passport::cookie()), Passport::$unserializesCookies)),
+            Passport::$decryptsCookies
+                ? CookieValuePrefix::remove($this->encrypter->decrypt($jwt, Passport::$unserializesCookies))
+                : $jwt,
             new Key(Passport::tokenEncryptionKey($this->encrypter), 'HS256')
         );
     }

@@ -1,39 +1,100 @@
-<x-guest-layout>
-    <x-auth.card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
-        </div>
+<style>
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-        @if (session('status') == 'verification-link-sent')
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ __('A new verification link has been sent to the email address you provided during registration.') }}
-            </div>
-        @endif
+/* Style for the card */
+.card {
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+}
 
-        <div class="mt-4 flex items-center justify-between">
-            <form method="POST" action="{{ route('verification.send') }}">
-                @csrf
+/* Logo styling */
+/* Logo styling */
+.logo {
+    display: block;
+    margin: 0 auto 2rem; /* Center the logo horizontally and add margin at the bottom */
+    width: 100px;
+    height: auto;
+}
 
-                <div>
-                    <x-button.button>
-                        {{ __('Resend Verification Email') }}
-                    </x-button.button>
-                </div>
-            </form>
 
-            <form method="POST" action="{{ route('logout') }}">
-                @csrf
+/* Title styling */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
-                <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900">
-                    {{ __('Log out') }}
-                </button>
-            </form>
-        </div>
-    </x-auth.card>
-</x-guest-layout>
+/* Text styling */
+.text {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+/* Button styling */
+.button {
+    background-color: #4f46e5;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4338ca;
+}
+
+/* Link styling */
+.link {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Logout button styling */
+.logout-button {
+    color: #6b7280;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    color: #4f46e5;
+}
+</style>
+
+
+
+<div class="card-container">
+    <div class="card">
+        <img src="{{ asset('img/logo.png') }}" alt="Logo" class="logo">
+        <h1 class="title">Sahkan Alamat Email Anda</h1>
+        <p class="text">
+            Terima kasih kerana mendaftar! Sebelum memulakan, bolehkah anda mengesahkan alamat emel anda dengan mengklik pautan yang telah kami hantar kepada anda?
+        </p>
+        <p class="text">
+            Jika anda tidak menerima emel itu, sila periksa folder spam atau
+            <a href="{{ route('verification.send') }}" class="link">klik di sini untuk menghantar semula</a>.
+        </p>
+
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+            <button type="submit" class="logout-button">Log Keluar</button>
+        </form>
+    </div>
+</div>
+

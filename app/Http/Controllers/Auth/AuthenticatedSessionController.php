@@ -8,8 +8,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-
-use App\Http\Controllers\Auth\AuthController;
+use Illuminate\Support\Facades\Validator;
 use App\Http\HttpClient;
 use App\Models\User;
 
@@ -32,53 +31,55 @@ class AuthenticatedSessionController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(LoginRequest $request)
-    {   
+    {
+        $validator = Validator::make($request->all(), [
+            'username' => 'required',
+            'password' => 'required',
+        ]);
+    
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+    
         if (filter_var($request->username, FILTER_VALIDATE_EMAIL)) {
             $user = User::where('email', $request->username)->first();
         } else {
-            $user = User::where('username', $request->username)->first();
+            $user = User::where('name', $request->username)->first();
         }
-        
-        if ($user) {
-            if (Hash::check($request->password, $user->password)) {
-                if (Auth::attempt(['email' => $user->email, 'password' => $request->password])) {
-                    // Make sure your login method in HttpClient accepts only necessary arguments
-                    $http_response = HttpClient::login($user->email, $request->password);
-                    $passport = json_decode($http_response);
-
-                    if (isset($passport->access_token)) {
-                        // Access token found in the response
-                        $request->session()->put('access_token', $passport->access_token);
-
-                        // Update user data
-                        $user->update([
-                            'access_token' => $passport->access_token,
-                            'refresh_token' => $passport->refresh_token,
-                            'last_login_at' => $user->current_login_at,
-                            'current_login_at' => now()
-                        ]);
-
-                        // Store user object directly in the session
-                        $request->session()->put('user', $user);
-
-                        return redirect()->route('home');
-                    } else {
-                        // Access token not found in the response
-                        flash('Access token not found in the response.')->error()->important();
-                        return redirect()->route('login');
-                    }
-                }
+    
+        if (!$user) {
+            return redirect()->route('login')->withErrors(['username' => __('messages.The provided email or username does not exist.')]);
+        }
+    
+        if (!Hash::check($request->password, $user->password)) {
+            return redirect()->route('login')->withErrors(['password' => __('messages.Kata laluan anda salah!')]);
+        }
+    
+        if (Auth::attempt(['email' => $user->email, 'password' => $request->password])) {
+            $http_response = HttpClient::login($user->email, $request->password);
+            $passport = json_decode($http_response);
+    
+            if (isset($passport->access_token)) {
+                $request->session()->put('access_token', $passport->access_token);
+                $user->update([
+                    'access_token' => $passport->access_token,
+                    'refresh_token' => $passport->refresh_token,
+                    'last_login_at' => $user->current_login_at,
+                    'current_login_at' => now()
+                ]);
+                $request->session()->put('user', $user);
+                return redirect()->route('home');
             } else {
-                // Incorrect password
-                flash('Wrong password!')->error()->important();
-                return redirect()->route('login');
+                return redirect()->route('login')->withErrors(['access_token' => 'Access token not found in the response.']);
             }
-        } else {
-            // User not found
-            flash('There are no users associated with the username or email!')->error()->important();
-            return redirect()->back()->withInput();
         }
+    
+        return redirect()->route('login')->withErrors(['credentials' => 'Invalid credentials.']);
     }
+    
+    
 
     /**
      * Destroy an authenticated session.
@@ -88,14 +89,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request)
     {
-        $user = Auth::user();
-
-        // Revoke tokens if available
-        if ($user->tokens()->exists()) {
-            $user->tokens()->delete();
-        }
-
-        // Logout
+        // Logout the user
         Auth::logout();
 
         // Invalidate session
